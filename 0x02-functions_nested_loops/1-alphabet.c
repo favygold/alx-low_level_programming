@@ -1,24 +1,17 @@
 #include "holberton.h"
-#include "main.h"
 /**
- * main - Entry point
- * print_alphabet - print alphabert lowercase
- *
- * Return: Always 0
- */
+* print_alphabet - entry point for the program
+* Description: Print lowercase alphabets
+* to the standard output
+* Return: 0 (success)
+*/
 
 void print_alphabet(void)
 {
-char letter; /*Decarling statement*/
-
-int main(void)
-
-/*for letter*/
-for (letter = 'a'; letter <= 'z'; letter++)
+int i;
+for (i = 97; i < 123; i++)
 {
-_putchar(letter);/*print letter*/
+_putchar(i);
 }
-
-_putchar('\n'); /*new line*/
-return (0);
+_putchar('\n');
 }
