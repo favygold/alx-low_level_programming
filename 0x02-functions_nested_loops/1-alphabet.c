@@ -1,17 +1,12 @@
-#include "holberton.h"
-/**
-* print_alphabet - entry point for the program
-* Description: Print lowercase alphabets
-* to the standard output
-* Return: 0 (success)
-*/
+#include "main.h"
 
-void print_alphabet(void)
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-int i;
-for (i = 97; i < 123; i++)
-{
-_putchar(i);
-}
-_putchar('\n');
+	print_alphabet();
+	return (0);
 }
