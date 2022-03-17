@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * add -prints add two numbers
  *@i: print int i
