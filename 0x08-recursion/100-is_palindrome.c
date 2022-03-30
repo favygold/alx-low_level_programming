@@ -1,60 +1,44 @@
 #include "main.h"
-#include <stdio.h>
-
-int is_palindrome(char *s);
-int ele_comparison(int len, char *s, int i);
 
 /**
  * _strlen_recursion - returns the length of a string
- * @s: the string to find the length of
- *
- * Return: length of string or return 0
+ * @s: input string
+ * Return: length of s
  */
 
-int is_palindrome(char *s)
+int _strlen_recursion(char *s)
 {
-
-	/* base case */
-	if (*s == '\0')
-
+	if (!*s)
 		return (0);
-
-	return (1 + _strlen_recursion(s + 1));
-
+	return (1 + _strlen_recursion(++s));
 }
 
 /**
- * ele_comparison - this func compares elements in a string
- * @s: string for comparison
- * @len: length of string
- * @i: index
- * Return: return 1, otherwise 0
+ * isPalRec - helper function for is_palindrome
+ * @str: input string
+ * @s: start index
+ * @e: end index
+ * Return: 1 if true, 0 if false
  */
-int ele_comparison(int len, char *s, int i)
+int isPalRec(char str[], int s, int e)
 {
-	if (s[i] != s[len - i])
-
-		return (0);
-
-	if (i == len)
-
+	if (s == e)
 		return (1);
-
-	return (ele_comparison(len, s, i + 1));
+	if (str[s] != str[e])
+		return (0);
+	if (s < e + 1)
+		return (isPalRec(str, s + 1, e - 1));
+	return (1);
 }
 
-
 /**
- * is_palindrome -  returns 1 if a string is a palindrome and 0 if not.
- * @s: string to check
- *
- * Return: return 1, otherwise 0
+ * is_palindrome - returns 1 if a string is a palindrome and 0 if not
+ * @s: input string
+ * Return: 1 if true, 0 if false
  */
 int is_palindrome(char *s)
 {
-	if (*s == '\0')
+	int len = _strlen_recursion(s) - 1;
 
-		return (1);
-
-	return (ele_comparison(_strlen_recursion(s) - 1, s, 0));
+	return (isPalRec(s, 0, len));
 }
