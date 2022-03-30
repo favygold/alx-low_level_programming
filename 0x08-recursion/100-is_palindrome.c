@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 int is_palindrome(char *s);
 int ele_comparison(int len, char *s, int i);
