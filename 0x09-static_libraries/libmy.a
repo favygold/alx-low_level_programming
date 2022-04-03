@@ -1,23 +1,23 @@
 #ifndef MAIN_H
 #define MAIN_H
-int _putchar(char c);
-int _islower(int c);
-int _isalpha(int c);
-int _abs(int n);
-int _isupper(int c);
-int _isdigit(int c);
-int _strlen(char *s);
-void _puts(char *s);
-char *_strcpy(char *dest, char *src);
-int _atoi(char *s);
-char *_strcat(char *dest, char *src);
-char *_strncat(char *dest, char *src, int n);
-char *_strncpy(char *dest, char *src, int n);
-int _strcmp(char *s1, char *s2);
-char *_memset(char *s, char b, unsigned int n);
-char *_memcpy(char *dest, char *src, unsigned int n);
-char *_strchr(char *s, char c);
-unsigned int _strspn(char *s, char *accept);
-char *_strpbrk(char *s, char *accept);
-char *_strstr(char *haystack, char *needle);
+int _0-isupper.o
+int _0-memset.o
+int _0-strcat.o
+int _1-isdigit.o
+int _1-memcpy.o
+int _1-strncat.o
+int _100-atoi.o
+int _2-strchr.o
+int _2-strlen.o
+int _2-strncpy.o
+int _3-islower.o
+int _3-puts.o
+int _3-strcmp.o
+int _3-strspn.o
+int _4-isalpha.o
+int _4-strpbrk.o
+int _5-strstr.o
+int _6-abs.o
+int _9-strcpy.o
+int _putchar.o
 #endif /*MAIN_H*/
