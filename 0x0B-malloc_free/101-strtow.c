@@ -8,7 +8,7 @@
  * @str: string of words to be split
  * Return: double pointer to strings
  */
-char **strtow(char *str)
+char **strtow(char *str);
 {
 	char **ptr;
 	int i, k, len, start, end, j = 0;
